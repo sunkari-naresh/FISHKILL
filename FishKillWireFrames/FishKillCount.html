@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html><html class="app-ui"><head>    <!-- Meta -->    <meta charset="UTF-8" />    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />    <!-- Document title -->    <title>FISHKILL | DEADANIMALCOUNT </title>    <meta name="description" content="FISHKILL LAYOUT" />    <meta name="author" content="rustheme" />    <meta name="robots" content="noindex, nofollow" />    <!-- Favicons -->    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" />    <link rel="icon" href="assets/img/favicons/favicon.ico" />    <!-- Google fonts -->    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,900%7CRoboto+Slab:300,400%7CRoboto+Mono:400" />    <link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css" />    <link rel="stylesheet" href="assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" />    <link rel="stylesheet" href="assets/js/plugins/select2/select2.min.css" />    <link rel="stylesheet" href="assets/js/plugins/select2/select2-bootstrap.css" />    <link rel="stylesheet" href="assets/js/plugins/dropzonejs/dropzone.min.css" />    <link rel="stylesheet" href="assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css" />    <!-- AppUI CSS stylesheets -->    <link rel="stylesheet" id="css-font-awesome" href="assets/css/font-awesome.css" />    <link rel="stylesheet" id="css-ionicons" href="assets/css/ionicons.css" />    <link rel="stylesheet" id="css-bootstrap" href="assets/css/bootstrap.css" />    <link rel="stylesheet" id="css-app" href="assets/css/app.css" />    <link rel="stylesheet" id="css-app-custom" href="assets/css/app-custom.css" />    <!-- End Stylesheets --></head><body class="app-ui layout-has-drawer layout-has-fixed-header">    <div class="app-layout-canvas">        <div class="app-layout-container">            <!-- Drawer -->            <aside class="app-layout-drawer">                <!-- Drawer scroll area -->                <div class="app-layout-drawer-scroll">                    <!-- Drawer logo -->                    <div id="logo" class="drawer-header" style="background-color:#7dc855">                        <a href="index.html">                            <!---->                            <img class="img-responsive" src="assets/img/logo/logo.png" title="MDC" alt="MDC" />                        </a>                    </div>                    <!-- Drawer navigation -->                    <nav class="drawer-main">                        <ul class="nav nav-drawer">
+                            <li class="nav-item nav-drawer-header">Apps</li>
+                            <li class="nav-item">
+                                <a href="Layout.html"><i class="ion-ios-speedometer-outline"></i> Layout</a>
+                            </li>
+                            <li class="nav-item active  ">
+                                <a href="FishKillCount.html"><i class="ion-ios-monitor-outline"></i> FISH KILL REPORT</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="WaterSample.html"><i class="ion-ios-monitor-outline"></i> Water Sample Report</a>
+                            </li>
+                            <li class="nav-item nav-drawer-header">SUB REPORTS</li>
+                            <li class="nav-item nav-item-has-subnav">
+                                <a href="javascript:void(0)"><i class="ion-ios-calculator-outline"></i>REPORT</a>
+                                <ul class="nav nav-subnav">
+                                    <li>
+                                        <a href="base_ui_buttons.html">S1</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_cards.html">S2</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_cards_api.html">S3</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_layout.html">S4</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_grid.html">S5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-subnav">
+                                <a href="javascript:void(0)"><i class="ion-ios-compose-outline"></i> OTHERS</a>
+                                <ul class="nav nav-subnav">
+                                    <li>
+                                        <a href="base_forms_elements.html">01</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_forms_samples.html">02</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>                    </nav>                    <!-- End drawer navigation -->                    <div class="drawer-footer">                        <p class="copyright">MDC &copy;</p>                    </div>                </div>                <!-- End drawer scroll area -->            </aside>            <!-- End drawer -->            <!-- Header -->            <header class="app-layout-header">                <nav class="navbar navbar-default">                    <div class="container-fluid">                        <div class="navbar-header">                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">                                <span class="sr-only">Toggle navigation</span>                                <span class="icon-bar"></span>                                <span class="icon-bar"></span>                                <span class="icon-bar"></span>                            </button>                            <button class="pull-left hidden-lg hidden-md navbar-toggle" type="button" data-toggle="layout" data-action="sidebar_toggle">                                <span class="sr-only">Toggle drawer</span>                                <span class="icon-bar"></span>                                <span class="icon-bar"></span>                                <span class="icon-bar"></span>                            </button>                            <span class="navbar-page-title">                                On-Site report of pollution investigation and fishkills                            </span>                        </div>                        <div class="collapse navbar-collapse" id="header-navbar-collapse">                            <!-- Header search form -->                            <!-- .navbar-left -->                            <ul class="nav navbar-nav navbar-right navbar-toolbar hidden-sm hidden-xs">                                <li class="dropdown dropdown-profile">                                    <a href="javascript:void(0)" data-toggle="dropdown">                                        <span class="m-r-sm">Krishna <span class="caret"></span></span>                                        <img class="img-avatar img-avatar-48" src="assets/img/avatars/avatar3.jpg" alt="User profile pic" />                                    </a>                                    <ul class="dropdown-menu dropdown-menu-right">                                        <li class="dropdown-header">                                            Pages                                        </li>                                        <li>                                            <a href="base_pages_profile.html">Profile</a>                                        </li>                                        <li>                                            <a href="base_pages_profile.html"><span class="badge badge-success pull-right">3</span> Blog</a>                                        </li>                                        <li>                                            <a href="frontend_login_signup.html">Logout</a>                                        </li>                                    </ul>                                </li>                            </ul>                            <!-- .navbar-right -->                        </div>                    </div>                    <!-- .container-fluid -->                </nav>                <!-- .navbar-default -->            </header>            <!-- End header -->            <main class="app-layout-content">
+                <!-- Page Content -->
+
+                <div class="container-fluid p-y-md">
+                   
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Bootstrap registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>FISH KILL EVENT</h4>
+                                    <ul class="card-actions">
+
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal" onsubmit="return false;" action="base_forms_samples.html" method="post">
+
+
+
+
+
+                                        <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+
+                                                                <th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Report ID</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Water Body</th>
+                                                                <th tabindex="0" class="hidden-xs sorting" aria-controls="DataTables_Table_1" style="width: 383px;" aria-label="Email: activate to sort column ascending" rowspan="1" colspan="1">Date</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">1294</td>
+                                                                <td class="hidden-xs">Osage River</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Add Count Sheet"><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Delete"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Sync count sheets"><i class="ion-android-sync "></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">2</td>
+                                                                <td class="font-500">1284</td>
+                                                                <td class="hidden-xs">Osage River</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Add Count Sheet"><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Delete"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Sync count sheets"><i class="ion-android-sync "></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+                                                                <td class="font-500">1214</td>
+                                                                <td class="hidden-xs">Osage River</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Add Count Sheet"><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Delete"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Sync count sheets"><i class="ion-android-sync "></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Bootstrap registration -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Bootstrap registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Count Sheets</h4>
+                                    <ul class="card-actions">
+
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal" onsubmit="return false;" action="base_forms_samples.html" method="post">
+
+
+
+
+
+                                        <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+
+                                                                <th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Report ID</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Station Name</th>
+                                                                <th tabindex="0" class="hidden-xs sorting" aria-controls="DataTables_Table_1" style="width: 383px;" aria-label="Email: activate to sort column ascending" rowspan="1" colspan="1">Date</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">1294</td>
+                                                                <td class="hidden-xs">Station 1</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">2</td>
+                                                                <td class="font-500">1284</td>
+                                                                <td class="hidden-xs">Station 2</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+                                                                <td class="font-500">1214</td>
+                                                                <td class="hidden-xs">Station 3</td>
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Bootstrap registration -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Bootstrap registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Dead Animal Count</h4>
+                                    <ul class="card-actions">
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal" onsubmit="return false;" action="base_forms_samples.html" method="post">
+
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <div class="form-material">
+                                                    <label for="txt_areaoffish">Report Id</label>
+                                                    <input name="txt_areaoffish" class="form-control" id="txt_areaoffish" type="number" placeholder="Enter ID">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <div class="form-material">
+                                                    <label for="drp_fishkil">Fish Kill</label>
+                                                    <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                        <option value="0">Please select</option>
+                                                        <option value="1">Natural</option>
+                                                        <option value="2">Pollutant</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="div_Common" class="col-sm-12 ">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="dtp_Date">Date</label>
+                                                        <input name="dtp_Date" class="js-datepicker form-control" id="dtp_Date" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_waterbodyName">Water Body Name</label>
+                                                        <input name="txt_waterbodyName" class="form-control" id="txt_waterbodyName" type="text" placeholder="Enter Water Body Name...">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_areaoffish">Area of fish kill or total area effected</label>
+                                                        <input name="txt_areaoffish" class="form-control" id="txt_areaoffish" type="number" placeholder="Enter Area affected">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_streamareacount">Type of stream area count</label>
+                                                        <div class="col-xs-12">
+                                                            <label class="radio-inline" for="rd_onebank">
+                                                                <input type="radio" id="rd_onebank" name="rdbank" checked value="onebank" /> One bank
+                                                            </label>
+                                                            <label class="radio-inline" for="rd_bothbank">
+                                                                <input type="radio" id="rd_bothbank" name="rdbank" value="Bothbanks" /> Both banks
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_staffname">Staff name</label>
+                                                        <input name="txt_staffname" class="form-control" id="txt_staffname" type="text" placeholder="Enter staff name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="example-select">Species</label>
+                                                        <select class="form-control" id="example-select" name="example-select" size="1">
+                                                            <option value="0">Please select</option>
+                                                            <option value="1">Fish</option>
+                                                            <option value="2">Mussels</option>
+                                                            <option value="3">Macroinvertebrates</option>
+                                                            <option value="4">Annelids(worms)</option>
+                                                            <option value="5">Amphibians/Reptiles</option>
+                                                            <option value="6">Mammals</option>
+                                                            <option value="7">Birds</option>
+                                                            <option value="8">Crappie</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_Count">Count</label>
+                                                        <input name="txt_Count" class="form-control" id="txt_Count" type="number" placeholder="Enter Count"> <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_Size">Size</label>
+                                                        <input name="txt_Size" class="form-control" id="txt_Size" type="number" placeholder="Enter Size"> <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_Station">Station</label>
+                                                        <input name="txt_Station" class="form-control" id="txt_Station" type="number" placeholder="Enter Station"> <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div id="div_pollutant" class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_totalareasampled">Total area sampled</label>
+                                                        <input name="txt_totalareasampled" class="form-control" id="txt_totalareasampled" type="number" placeholder="Enter total Area Sampled">
+                                                        <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                            <option value="0">Please select</option>
+                                                            <option value="1">Sq Miles</option>
+                                                            <option value="2">Acres</option>
+                                                            <option value="2">Stream Miles</option>
+                                                            <option value="2">Yards</option>
+                                                            <option value="2">Feet</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="example-select">Type of pond/ Lake average count</label>
+                                                        <select class="form-control" id="example-select" name="example-select" size="1">
+                                                            <option value="0">Please select</option>
+                                                            <option value="1">Shoreline</option>
+                                                            <option value="2">Open Water</option>
+                                                            <option value="3">Total</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_Count">Station Start Location</label>
+                                                        <input name="txt_Count" class="form-control" id="txt_Count" type="number" placeholder="Station Start Location"> <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <label for="txt_Size">Station End Location</label>
+                                                        <input name="txt_Size" class="form-control" id="txt_Size" type="number" placeholder="Station End Location"> <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <div class="col-sm-12">
+                                                <div class="form-material">
+                                                    <button class="btn btn-app" type="submit">Save</button>
+                                                    <button class="btn btn-app" type="submit">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div>
+                                                </div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div>
+                                            </div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row"><th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th><th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Species</th><th tabindex="0" class="hidden-xs sorting" aria-controls="DataTables_Table_1" style="width: 383px;" aria-label="Email: activate to sort column ascending" rowspan="1" colspan="1">Size</th><th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Count</th></tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">FISH</td>
+                                                                <td class="hidden-xs">10</td>
+                                                                <td class="hidden-xs">
+                                                                    200
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip"><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip"><i class="ion-minus "></i></button>
+                                                                    </div>
+                                                                </td>
+
+
+
+
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">2</td>
+                                                                <td class="font-500">Worms</td>
+                                                                <td class="hidden-xs">11</td>
+
+                                                                <td class="hidden-xs">
+                                                                    20000
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip"><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip"><i class="ion-minus "></i></button>
+                                                                    </div>
+                                                                </td>
+
+
+
+
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+                                                                <td class="font-500">Species Name</td>
+                                                                <td class="hidden-xs">Size</td>
+                                                                <td class="hidden-xs">
+                                                                    Count
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip" ><i class="ion-plus "></i></button>
+                                                                        <button title="" class="btn btn-ms btn-default" type="button" data-toggle="tooltip" ><i class="ion-minus "></i></button>
+                                                                    </div>
+                                                                </td>
+
+
+
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                            <div class="form-group m-b-0">
+                                                <div class="col-sm-12">
+                                                    <div class="form-material">
+                                                        <button class="btn btn-app" type="submit">Save</button>
+                                                        <button class="btn btn-app" type="submit">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Bootstrap registration -->
+                        </div>
+                    </div>
+
+                </div>
+
+              
+</div>        <!-- End Page Content -->        </main>    </div>    <!-- .app-layout-container -->    </div>    <!-- .app-layout-canvas -->    <!-- Apps Modal -->    <!-- Opens from the button in the header -->    <div id="apps-modal" class="modal fade" tabindex="-1" role="dialog">        <div class="modal-sm modal-dialog modal-dialog-top">            <div class="modal-content">                <!-- Apps card -->                <div class="card m-b-0">                    <div class="card-header bg-app bg-inverse">                        <h4>Apps</h4>                        <ul class="card-actions">                            <li>                                <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>                            </li>                        </ul>                    </div>                    <div class="card-block">                        <div class="row text-center">                            <div class="col-xs-6">                                <a class="card card-block m-b-0 bg-app-secondary bg-inverse" href="index.html">                                    <i class="ion-speedometer fa-4x"></i>                                    <p>Admin</p>                                </a>                            </div>                            <div class="col-xs-6">                                <a class="card card-block m-b-0 bg-app-tertiary bg-inverse" href="frontend_home.html">                                    <i class="ion-laptop fa-4x"></i>                                    <p>Frontend</p>                                </a>                            </div>                        </div>                    </div>                    <!-- .card-block -->                </div>                <!-- End Apps card -->            </div>        </div>    </div>    <!-- End Apps Modal -->    <div class="app-ui-mask-modal"></div>    <!-- AppUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock and App.js -->    <script src="assets/js/core/jquery.min.js"></script>    <script src="assets/js/core/bootstrap.min.js"></script>    <script src="assets/js/core/jquery.slimscroll.min.js"></script>    <script src="assets/js/core/jquery.scrollLock.min.js"></script>    <script src="assets/js/core/jquery.placeholder.min.js"></script>    <script src="assets/js/app.js"></script>    <script src="assets/js/app-custom.js"></script>    <!-- Page JS Plugins -->    <script src="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>    <!-- Page JS Plugins -->    <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>    <!-- Page JS Code -->    <!--<script src="assets/js/pages/base_tables_datatables.js"></script>-->    <!-- Page JS Code -->    <script>        $(function () {            // Init page helpers (BS Datepicker + BS Colorpicker + Select2 + Masked Input + Tags Inputs plugins)            App.initHelpers(['datepicker']);        });    </script>    <script>        $('#drp_fishkil').on('change', function () {
+            var Norp = this.value;
+            if (Norp == "1") {
+                $('#div_pollutant').css("display", "none");
+
+            }
+            else {
+                $('#div_pollutant').css("display", "block");
+            }
+        });    </script></body></html>
