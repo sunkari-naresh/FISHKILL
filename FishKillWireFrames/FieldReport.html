@@ -1,0 +1,1637 @@
+﻿<!DOCTYPE html>
+<html class="app-ui">
+<head>
+    <!-- Meta -->
+    <!-- this  chnges from nani -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Document title -->
+    <title>Layout | FISHKILL </title>
+    <meta name="description" content="FISHKILL LAYOUT" />
+    <meta name="author" content="rustheme" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" href="assets/img/favicons/favicon.ico" />
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,900%7CRoboto+Slab:300,400%7CRoboto+Mono:400" />
+    <!-- AppUI CSS stylesheets -->
+
+    <link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" />
+    <link rel="stylesheet" href="assets/js/plugins/select2/select2.min.css" />
+    <link rel="stylesheet" href="assets/js/plugins/select2/select2-bootstrap.css" />
+    <link rel="stylesheet" href="assets/js/plugins/dropzonejs/dropzone.min.css" />
+    <link rel="stylesheet" href="assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css" />
+
+    <link rel="stylesheet" id="css-font-awesome" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" id="css-ionicons" href="assets/css/ionicons.css" />
+    <link rel="stylesheet" id="css-bootstrap" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" id="css-app" href="assets/css/app.css" />
+    <link rel="stylesheet" id="css-app-custom" href="assets/css/app-custom.css" />
+    <!-- End Stylesheets -->
+</head>
+<body class="app-ui layout-has-drawer layout-has-fixed-header">
+    <div class="app-layout-canvas">
+        <div class="app-layout-container">
+            <!-- Drawer -->
+            <aside class="app-layout-drawer">
+                <!-- Drawer scroll area -->
+                <div class="app-layout-drawer-scroll">
+                    <!-- Drawer logo -->
+                    <div id="logo" class="drawer-header" style="background-color:#7dc855">
+                        <a href="index.html">
+                            <!---->
+                            <img class="img-responsive" src="assets/img/logo/logo.png" title="MDC" alt="MDC" />
+                        </a>
+                    </div>
+                    <!-- Drawer navigation -->
+                    <nav class="drawer-main">
+                        <ul class="nav nav-drawer">
+                            <li class="nav-item nav-drawer-header">Apps</li>
+                            <li class="nav-item">
+                                <a href="index.html"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="FieldReport.html"><i class="ion-ios-monitor-outline"></i> Field app</a>
+                            </li>
+                            <li class="nav-item nav-drawer-header">SUB REPORTS</li>
+                            <li class="nav-item nav-item-has-subnav">
+                                <a href="javascript:void(0)"><i class="ion-ios-calculator-outline"></i>REPORT</a>
+                                <ul class="nav nav-subnav">
+                                    <li>
+                                        <a href="base_ui_buttons.html">S1</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_cards.html">S2</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_cards_api.html">S3</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_layout.html">S4</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_ui_grid.html">S5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-subnav">
+                                <a href="javascript:void(0)"><i class="ion-ios-compose-outline"></i> OTHERS</a>
+                                <ul class="nav nav-subnav">
+                                    <li>
+                                        <a href="base_forms_elements.html">01</a>
+                                    </li>
+                                    <li>
+                                        <a href="base_forms_samples.html">02</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- End drawer navigation -->
+                    <div class="drawer-footer">
+                        <p class="copyright">MDC &copy;</p>
+
+                    </div>
+                </div>
+                <!-- End drawer scroll area -->
+            </aside>
+            <!-- End drawer -->
+            <!-- Header -->
+            <header class="app-layout-header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <button class="pull-left hidden-lg hidden-md navbar-toggle" type="button" data-toggle="layout" data-action="sidebar_toggle">
+                                <span class="sr-only">Toggle drawer</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="navbar-page-title">
+
+                                On-Site report of pollution investigation and fishkills
+                            </span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="header-navbar-collapse">
+                            <!-- Header search form -->
+                            <!-- .navbar-left -->
+                            <ul class="nav navbar-nav navbar-right navbar-toolbar hidden-sm hidden-xs">
+
+                                <li class="dropdown dropdown-profile">
+                                    <a href="javascript:void(0)" data-toggle="dropdown">
+                                        <span class="m-r-sm">Krishna <span class="caret"></span></span>
+                                        <img class="img-avatar img-avatar-48" src="assets/img/avatars/avatar3.jpg" alt="User profile pic" />
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-header">
+                                            Pages
+                                        </li>
+                                        <li>
+                                            <a href="base_pages_profile.html">Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="base_pages_profile.html"><span class="badge badge-success pull-right">3</span> Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="frontend_login_signup.html">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- .navbar-right -->
+                        </div>
+                    </div>
+                    <!-- .container-fluid -->
+                </nav>
+                <!-- .navbar-default -->
+            </header>
+            <!-- End header -->
+            <main class="app-layout-content">
+                <!-- Page Content -->
+                <div class="container-fluid p-y-md">
+                    <h2 class="section-title">Field report of pollution investigation and fishkills</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Bootstrap registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Header</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Time</label>
+                                                <input name="txt_Time" class="form-control" id="txt_Time" type="text" placeholder="Enter Time...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-email">Legal Desc</label>
+                                                <input name="txt_email" class="form-control" id="txt_email" type="email" placeholder="Enter Legal Desc...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-xs-12">
+                                                <label for="example-datepicker4">Investigation date</label>
+
+                                                <input name="example-datepicker4" class="js-datepicker form-control" id="example-datepicker4" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+
+
+                                            </div>
+
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="col-xs-3">
+                                                    <label class="col-xs-3" for="register1-email">UTM</label>
+
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <label class="col-xs-3" for="register1-email">X</label>
+                                                    <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                                </div><div class="col-xs-3">
+                                                    <label class="col-xs-3" for="register1-email">Y</label>
+                                                    <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Country</label>
+                                                <input name="register1-username" class="form-control" id="register1-username" type="text" placeholder="Enter username...">
+                                            </div>
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-email">Zone</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-password2">Nearest Town</label>
+
+                                                <input name="register1-password2" class="form-control" id="register1-password2" type="password" placeholder="Confirm password...">
+                                            </div>
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Water Type</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Lake</option>
+                                                    <option value="2">Pond</option>
+                                                    <option value="3">Stream</option>
+                                                    <option value="4">Wet Land</option>
+                                                    <option value="5">Back Water</option>
+                                                    <option value="6">None Involved</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+
+
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-email">Size (Acress/Order)</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                            </div>
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Water Body Type</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Private</option>
+                                                    <option value="2">Non Private</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+
+
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-email">Water Body Name</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                            </div>
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Water Body Owner Name</label>
+                                                <input name="register1-username" class="form-control" id="register1-username" type="text" placeholder="Enter username...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-email">Phone</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter email...">
+                                            </div>
+                                        </div><div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="col-xs-12" for="register1-username">Address</label>
+                                                <input name="register1-username" class="form-control" id="register1-username" type="text" placeholder="Enter username...">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Bootstrap registration -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Source of Pollution</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Type</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Agricultural Operation</option>
+                                                    <option value="2">Industrial Operation</option>
+                                                    <option value="3">Muncipal Operation</option>
+                                                    <option value="4">Transportation Operation</option>
+                                                    <option value="5">Natural</option>
+                                                    <option value="6">OTHER</option>
+                                                    <option value="7">Unknown</option>
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Sub Type</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Subtype-1</option>
+                                                    <option value="2">Subtype-2</option>
+                                                    <option value="3">Subtype-3</option>
+                                                    <option value="4">Subtype-4</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Type</th>
+                                                                <th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Sub Type</th>
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Natural</td>
+                                                                <td class="hidden-xs">Sub type</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">2</td>
+                                                                <td class="font-500">Tranprot</td>
+                                                                <td class="hidden-xs">Subtype</td>
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+                                                                <td class="font-500">Other</td>
+                                                                <td class="hidden-xs">Sub type</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Specific Agent or Cause</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Agent or Cause</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter Source...">
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Source</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter Source...">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Quantity</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="email" placeholder="Enter Quantity...">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-xs-12">
+                                                <label for="example-datepicker4">Date of spill</label>
+
+                                                <input name="example-datepicker4" class="js-datepicker form-control" id="example-datepicker4" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Waters Contaminated</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Missouri waters contaminated</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Y</option>
+                                                    <option value="2">N</option>
+                                                    <option value="3">UNK</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Evidance of Ground water Contamination</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Y</option>
+                                                    <option value="2">N</option>
+                                                    <option value="3">UNK</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Responsibility Part</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Responsibility Part</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Suspect</option>
+                                                    <option value="2">Confirmed</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Name...">
+                                                    <label for="register2-email">Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Address Line...">
+                                                    <label for="register2-email">Address Line</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Street...">
+                                                    <label for="register2-email">Street</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter City...">
+                                                    <label for="register2-email">City</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter State...">
+                                                    <label for="register2-email">State</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Zip...">
+                                                    <label for="register2-email">Zip</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Phone...">
+                                                    <label for="register2-email">Phone</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Injuries to Fish and Wild Life</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <label class="col-xs-12">STATE OF DECAY</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1"> Fresh Dead
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> Slightly
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Very
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">LIVE FISH PRESENT</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Y</option>
+                                                    <option value="2">N</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Visible Injuries</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1">Abrasions
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> Lesions
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Bledding
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1">Missing Body Part
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> Bloating
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Pop - Eye
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Forwrd Fin Position
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Unusal Color
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Lacerations
+                                                </label>
+                                                <br />
+                                                <label for="register3-password">List Others</label>
+                                                <input name="register3-password" placeholder="List Others" class="form-control" id="register3-password" type="text">
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Live Fish Behaviour</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1">Convulsive
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> Lethargic
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox3">
+                                                    <input name="example-inline-checkbox3" id="example-inline-checkbox3" type="checkbox" value="option3"> Normal
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1">Jumping On Banks
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> Piping
+                                                </label>
+                                                <br />
+                                                <label for="register3-password">List Others</label>
+                                                <input name="register3-password" placeholder="List Others" class="form-control" id="register3-password" type="password">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="col-xs-12">
+                                                <label for="register3-password">Exten of Damage(Length of straem or area of reservoir)</label>
+                                                <input name="register3-password" placeholder="10" class="form-control" id="register3-password" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="col-xs-12">
+                                                <label for="register3-password">Duration of Effects(days)</label>
+                                                <input name="register3-password" placeholder="1" class="form-control" id="register3-password" type="number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Environmental Conditions</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Time Period</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">During Investigation</option>
+                                                    <option value="2">Previous 24 hours</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Precipitaion</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1"> Yes
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> No
+                                                </label>
+                                                <!--<label class="checkbox-inline" for="example-inline-checkbox3">
+                                    <input name="form-control" id="example-inline-checkbox3" type="text" />Inches
+                                </label>-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Air Temparature</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="text" placeholder="Enter Temparature...">
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">C</option>
+                                                    <option value="2">F</option>
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Cloud Cover</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Clear</option>
+                                                    <option value="2">Partly Cloudy</option>
+                                                    <option value="3">Overcast</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <h4>Water  Description</h4>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Flow</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">option1</option>
+                                                    <option value="2">option2</option>
+                                                    <option value="3">UNK</option>
+
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Turbidity</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">option1</option>
+                                                    <option value="2">option2</option>
+                                                    <option value="3">UNK</option>
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Visible Discharge</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1"> Yes
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> No
+                                                </label>
+                                                <!--<label class="checkbox-inline" for="example-inline-checkbox3">
+                                    <input name="form-control" id="example-inline-checkbox3" type="text" />Inches
+                                </label>-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Surface Scrum</label>
+                                            <div class="col-xs-12">
+                                                <label class="checkbox-inline" for="example-inline-checkbox1">
+                                                    <input name="example-inline-checkbox1" id="example-inline-checkbox1" type="checkbox" value="option1"> Yes
+                                                </label>
+                                                <label class="checkbox-inline" for="example-inline-checkbox2">
+                                                    <input name="example-inline-checkbox2" id="example-inline-checkbox2" type="checkbox" value="option2"> No
+                                                </label>
+                                                <!--<label class="checkbox-inline" for="example-inline-checkbox3">
+                                    <input name="form-control" id="example-inline-checkbox3" type="text" />Inches
+                                </label>-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Odor (Describe)</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="text" placeholder="Enter odor...">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Colour (Describe)</label>
+                                                <input name="register1-email" class="form-control" id="register1-email" type="text" placeholder="Enter Colour...">
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Time period</th>
+                                                                <th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Precipitation</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Aire Temparature</th>
+                                                                <th tabindex="0" class="hidden-xs sorting" aria-controls="DataTables_Table_1" style="width: 383px;" aria-label="Email: activate to sort column ascending" rowspan="1" colspan="1">Cloud Cover</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Water Description</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="font-500">Lorem</td>
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="font-500">Lorem</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+
+                                                                <td class="font-500">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="hidden-xs">Lorem</td>
+
+                                                                <td class="hidden-xs">Lorem</td>
+                                                                <td class="font-500">Lorem</td>
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Comments(narrative of investigation activities)</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">comments</label>
+
+                                                <textarea class="form-control" id="register1-email"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Comments</th>
+
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Date</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">comment</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">comment</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">comment</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Corrective Actions Needed</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Corrective Actions Needed</label>
+
+                                                <textarea class="form-control" id="register1-email"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Corrective Actions Needed</th>
+
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Date</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Corrective Actions Needed</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Corrective Actions Needed</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">Corrective Actions Needed</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row">
+                        <!-- .col-lg-4 -->
+                        <div class="col-lg-12">
+                            <!-- Material registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>Reported to MDC By</h4>
+                                    <ul class="card-actions">
+
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-username" class="form-control" id="register2-username" type="text" placeholder="Enter Name...">
+                                                    <label for="register2-username">Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Address Line...">
+                                                    <label for="register2-email">Address Line</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Street...">
+                                                    <label for="register2-email">Street</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter City...">
+                                                    <label for="register2-email">City</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter State...">
+                                                    <label for="register2-email">State</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-email" class="form-control" id="register2-email" type="email" placeholder="Enter Zip...">
+                                                    <label for="register2-email">Zip</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-password" class="form-control" id="register2-password" type="password" placeholder="Enter phone...">
+                                                    <label for="register2-password">Phone</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="example-datepicker4" class="js-datepicker form-control" id="example-datepicker4" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+                                                    <label for="register2-email">Date</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h2>Person who has observed the Fish Kill ( In case of responder can not find in field)</h2>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-password2" class="form-control" id="register2-password2" type="text" placeholder="Enter Name">
+                                                    <label for="register2-password2">Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="example-datepicker4" class="js-datepicker form-control" id="example-datepicker4" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+                                                    <label for="register2-password2">Discovery Date</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="form-material">
+                                                    <input name="register2-password2" class="form-control" id="register2-password2" type="password" placeholder="Confirm password...">
+                                                    <label for="register2-password2">Phone</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material registration -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Material (floating) registration -->
+                            <div class="card ">
+                                <div class="card-header bg-green bg-inverse">
+                                    <h4>PERSONS NOTIFIED BY MDC FIELD INVESTIGATOR</h4>
+                                    <ul class="card-actions">
+                                        <!--<li>
+                            <button type="button" data-toggle="card-action" data-action="refresh_toggle" data-action-mode="demo"><i class="ion-refresh"></i></button>
+                        </li>-->
+                                        <li>
+                                            <button type="button" data-toggle="card-action" data-action="content_toggle"><i class="ion-chevron-up"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-block">
+                                    <form class="form-horizontal m-t-sm" onsubmit="return false;" action="base_forms_samples.html" method="post">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-username">Agency</label>
+                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">DNR-EER(Mandatory)</option>
+                                                    <option value="2">DNR-REGIONAL</option>
+                                                    <option value="3">MDC-AQUATIC HEALTH UNIT</option>
+                                                    <option value="4">MDC-INVESTIGATOR'S SUPERVISOR </option>
+                                                    <option value="5">EPA</option>
+                                                    <option value="6">OTHER</option>
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-email">Name</label>
+
+                                                <input name="register3-email" class="form-control" id="register3-email" type="email" placeholder="Name">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-password">Phone/Email</label>
+                                                <input name="register3-password" placeholder="Phone/Email" class="form-control" id="register3-password" type="password">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-password2">Discovery Date</label>
+                                                <input name="example-datepicker4" class="js-datepicker form-control" id="example-datepicker4" type="text" placeholder="mm/dd/yy" data-date-format="mm/dd/yy">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="register3-password2">Time</label>
+                                                <input name="register3-password2" class="form-control" id="register3-password2" type="time" placeholder="Enter Time">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <div class="col-xs-12">
+                                                <button class="btn btn-app" type="submit">Save</button>
+                                                <button class="btn btn-app" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                                            <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label><select name="DataTables_Table_1_length" class="form-control" aria-controls="DataTables_Table_1"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="DataTables_Table_1_filter"><label>Search:<input class="form-control" aria-controls="DataTables_Table_1" type="search" placeholder=""></label></div></div></div><div class="row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-bordered table-striped table-vcenter js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1"></th>
+                                                                <th tabindex="0" class="text-center sorting_asc" aria-controls="DataTables_Table_1" style="width: 77px;" aria-label=": activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Agency</th>
+                                                                <th tabindex="0" class="sorting" aria-controls="DataTables_Table_1" style="width: 298px;" aria-label="Name: activate to sort column ascending" rowspan="1" colspan="1">Name</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Phone/Email</th>
+                                                                <th tabindex="0" class="hidden-xs sorting" aria-controls="DataTables_Table_1" style="width: 383px;" aria-label="Email: activate to sort column ascending" rowspan="1" colspan="1">Discovery Date</th>
+                                                                <th tabindex="0" class="hidden-xs w-20 sorting" aria-controls="DataTables_Table_1" style="width: 206px;" aria-label="Position: activate to sort column ascending" rowspan="1" colspan="1">Time</th>
+
+
+                                                                <th class="text-center sorting_disabled" style="width: 94px;" aria-label="Actions" rowspan="1" colspan="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">1</td>
+                                                                <td class="font-500">EPA</td>
+                                                                <td class="hidden-xs">Name</td>
+                                                                <td class="hidden-xs">123-4567890</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="font-500">1:00 PM</td>
+
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="even" role="row">
+                                                                <td class="text-center sorting_1">2</td>
+                                                                <td class="font-500">DNR-REGIONAL</td>
+                                                                <td class="hidden-xs">Name</td>
+                                                                <td class="hidden-xs">123-4567890</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="font-500">1:00 PM</td>
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove Staion"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="odd" role="row">
+                                                                <td class="text-center sorting_1">3</td>
+                                                                <td class="font-500">EPA</td>
+                                                                <td class="hidden-xs">Name</td>
+                                                                <td class="hidden-xs">123-4567890</td>
+
+                                                                <td class="hidden-xs">01/01/2018</td>
+                                                                <td class="font-500">1:00 PM</td>
+
+
+                                                                <td class="text-center">
+                                                                    <div class="btn-group">
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Edit"><i class="ion-edit"></i></button>
+                                                                        <button title="" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" data-original-title="Remove"><i class="ion-close"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing <strong>1</strong>-<strong>10</strong> of <strong>40</strong></div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li tabindex="0" class="paginate_button previous disabled" id="DataTables_Table_1_previous" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-left"></i></a></li><li tabindex="0" class="paginate_button active" aria-controls="DataTables_Table_1"><a href="#">1</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">2</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">3</a></li><li tabindex="0" class="paginate_button " aria-controls="DataTables_Table_1"><a href="#">4</a></li><li tabindex="0" class="paginate_button next" id="DataTables_Table_1_next" aria-controls="DataTables_Table_1"><a href="#"><i class="ion-ios-arrow-right"></i></a></li></ul></div></div></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .card-block -->
+                            </div>
+                            <!-- .card -->
+                            <!-- End Material (floating) registration -->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <!-- End Page Content -->
+            </main>
+        </div>
+        <!-- .app-layout-container -->
+    </div>
+    <!-- .app-layout-canvas -->
+    <!-- Apps Modal -->
+    <!-- Opens from the button in the header -->
+    <div id="apps-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-sm modal-dialog modal-dialog-top">
+            <div class="modal-content">
+                <!-- Apps card -->
+                <div class="card m-b-0">
+                    <div class="card-header bg-app bg-inverse">
+                        <h4>Apps</h4>
+                        <ul class="card-actions">
+                            <li>
+                                <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-block">
+                        <div class="row text-center">
+                            <div class="col-xs-12">
+                                <a class="card card-block m-b-0 bg-app-secondary bg-inverse" href="index.html">
+                                    <i class="ion-speedometer fa-4x"></i>
+                                    <p>Admin</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-12">
+                                <a class="card card-block m-b-0 bg-app-tertiary bg-inverse" href="frontend_home.html">
+                                    <i class="ion-laptop fa-4x"></i>
+                                    <p>Frontend</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .card-block -->
+                </div>
+                <!-- End Apps card -->
+            </div>
+        </div>
+    </div>
+    <!-- End Apps Modal -->
+    <div class="app-ui-mask-modal"></div>
+    <!-- AppUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock and App.js -->
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+    <script src="assets/js/core/jquery.placeholder.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app-custom.js"></script>4
+    <!-- Page JS Plugins -->
+    <script src="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            // Init page helpers (BS Datepicker + BS Colorpicker + Select2 + Masked Input + Tags Inputs plugins)
+            App.initHelpers(['datepicker']);
+        });
+    </script>
+</body>
+</html>
