@@ -151,6 +151,7 @@
     <Content Include="Layout.html" />
     <Content Include="FieldReport.html" />
     <Content Include="Report.html" />
+    <Content Include="EventIntake.html" />
     <Content Include="WaterSample.html" />
     <Content Include="Web.config" />
   </ItemGroup>
