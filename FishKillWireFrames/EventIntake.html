@@ -169,7 +169,7 @@
                             <!-- Bootstrap registration -->
                             <div class="card">
                                 <div class="card-header bg-green bg-inverse">
-                                    <h4>Event Intake</h4>
+                                    <h4>Report a Concern</h4>
                                     <ul class="card-actions">
 
                                         <li>
@@ -232,20 +232,34 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="col-xs-3">
+                                            <div class="col-xs-6">
                                                 <div class="form-material">
-                                                    <input name="register2-email" class="form-control" id="register2-email" type="" maxlength="5" placeholder="Enter Zip...">
+                                                    <input name="register2-email" maxlength="10" class="form-control" id="register2-email" type="text" placeholder="Enter Zip...">
                                                     <label for="register2-email">Zip</label>
                                                 </div>
                                             </div>
-
-
                                         </div>
-                                        <h3>What are you reporting :</h3>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <div class="form-material">
+                                                    <input name="register2-email" maxlength="10" class="form-control" id="register2-email" type="text" placeholder="Enter Phone Number...">
+                                                    <label for="register2-email">Phone</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <div class="form-material">
+                                                    <input name="register2-email" maxlength="10" class="form-control" id="register2-email" type="text" placeholder="Enter Email ID...">
+                                                    <label for="register2-email">Email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>Tell us a little bit about what your reporting</h3>
                                         <div class="form-group">
                                             <div class="col-sm-12">
                                                 <div class="form-material">
-                                                    <label for="txt_streamareacount">Water Body Event:</label>
+                                                    <label for="txt_streamareacount">Do you have a water quality concern?</label>
                                                     <div class="col-xs-12">
                                                         <label class="radio-inline" for="rd_onebank">
                                                             <input type="radio" id="rd_onebank" name="rdbank" checked value="Yes" /> Yes
@@ -253,6 +267,9 @@
                                                         <label class="radio-inline" for="rd_bothbank">
                                                             <input type="radio" id="rd_both" name="rdbank" value="No" /> No
                                                         </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_both" name="rdbank" value="Unknown" /> Uknown
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -260,7 +277,7 @@
                                         <div class="form-group">
                                             <div class="col-sm-12">
                                                 <div class="form-material">
-                                                    <label for="txt_streamareacount">Pollution:</label>
+                                                    <label for="txt_streamareacount">Do you suspect pollution is involved / present?</label>
                                                     <div class="col-xs-12">
                                                         <label class="radio-inline" for="rd_onebank">
                                                             <input type="radio" id="rd_onebank" name="rdbank" checked value="Yes" /> Yes
@@ -268,6 +285,9 @@
                                                         <label class="radio-inline" for="rd_bothbank">
                                                             <input type="radio" id="rd_bothbank" name="rdbank" value="No" /> No
                                                         </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_both" name="rdbank" value="Unknown" /> Uknown
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -275,7 +295,43 @@
                                         <div class="form-group">
                                             <div class="col-sm-12">
                                                 <div class="form-material">
-                                                    <label for="txt_streamareacount">Public Water:</label>
+                                                    <label for="txt_streamareacount">Is this privately owned ? </label>
+                                                    <div class="col-xs-12">
+                                                        <label class="radio-inline" for="rd_onebank">
+                                                            <input type="radio" id="rd_onebank" name="rdbank" checked value="Yes" /> Yes
+                                                        </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_bothbank" name="rdbank" value="No" /> No
+                                                        </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_both" name="rdbank" value="Unknown" /> Uknown
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <div class="form-material">
+                                                    <label for="txt_streamareacount">Are there fish or animals dead?</label>
+                                                    <div class="col-xs-12">
+                                                        <label class="radio-inline" for="rd_onebank">
+                                                            <input type="radio" id="rd_onebank" name="rdbank" checked value="Yes" /> Yes
+                                                        </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_bothbank" name="rdbank" value="No" /> No
+                                                        </label>
+                                                        <label class="radio-inline" for="rd_bothbank">
+                                                            <input type="radio" id="rd_both" name="rdbank" value="Unknown" /> Uknown
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <div class="form-material">
+                                                    <label for="txt_streamareacount">More than 10 Fish Dead?</label>
                                                     <div class="col-xs-12">
                                                         <label class="radio-inline" for="rd_onebank">
                                                             <input type="radio" id="rd_onebank" name="rdbank" checked value="Yes" /> Yes
@@ -291,14 +347,14 @@
                                         <div class="form-group">
                                             <div class="col-xs-6">
                                                 <div class="form-material">
-                                                    <label for="txt_Stationdescription">Test</label>
+                                                    <label for="txt_Stationdescription">Base Map:</label>
                                                     <select class="form-control" id="example-select" name="example-select" size="1">
                                                         <option value="0">Please select</option>
 
                                                         <option value="1">Road</option>
                                                         <option value="2">Satellite</option>
 
-                                                        <option value="5">Topography</option>
+                                                        <option value="5">Topographic</option>
                                                     </select>
                                                 </div>
 
@@ -314,7 +370,10 @@
                                         </div>
                                         <div class="form-group ">
                                             <div class="col-xs-6 form-material ">
-                                                <div id="map" style="width:400px;height:400px;"></div>
+                                                <div id="map">
+                                                    <img src="Images/Base Map.png" />
+
+                                                </div>
 
 
                                             </div>
@@ -414,17 +473,6 @@
             App.initHelpers(['datepicker']);
         });
     </script>
-    <script>
-        function myMap() {
-            var mapOptions = {
-                center: new google.maps.LatLng(51.5, -0.12),
-                zoom: 10,
-                mapTypeId: google.maps.MapTypeId.HYBRID
-            }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
+   
 </body>
 </html>
