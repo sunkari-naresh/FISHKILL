@@ -295,7 +295,7 @@
                                         <div class="form-group">
                                             <div class="col-xs-6">
                                                 <label class="col-xs-6" for="register1-username">What type of water is this ?</label>
-                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                <select class="form-control" id="drp_typeofwater"  name="drp_fishkil" size="1">
                                                     <option value="0">Please select</option>
                                                     <option value="1">Pond</option>
                                                     <option value="2">Lake</option>
@@ -307,7 +307,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group"  id="div_priavtelyowned" style="display:none">
                                             <div class="col-sm-12">
                                                 <div class="form-material">
                                                     <label for="txt_streamareacount">Is this privately owned ? </label>
@@ -361,7 +361,7 @@
                                         <div class="form-group">
                                             <div class="col-xs-6">
                                                 <label class="col-xs-6" for="register1-username">Affiliation:</label>
-                                                <select class="form-control" id="drp_fishkil" name="drp_fishkil" size="1">
+                                                <select class="form-control" id="drp_Affiliation" name="drp_fishkil" size="1">
                                                     <option value="0">Please select</option>
                                                     <option value="1">Public</option>
                                                     <option value="2">DNR</option>
@@ -373,7 +373,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group" id="div_Affiliationother" style="display:none">
                                             <div class="col-sm-6">
                                                 <div class="form-material">
                                                     <label for="txt_areaoffish">Affiliation Other :</label>
@@ -518,6 +518,32 @@
             App.initHelpers(['datepicker']);
         });
     </script>
-   
+   <script>
+
+       $(document).ready(function () {
+           $("#drp_typeofwater").change(function () {
+               var value = $("#drp_typeofwater option:selected").val();
+               console.log(value);
+               if (value == 1 || value == 2 || value == 3) {
+                   $("#div_priavtelyowned").attr("style", "display:inline");
+               }
+               else {
+                   $("#div_priavtelyowned").attr("style", "display:none");
+               }
+           });
+
+           $("#drp_Affiliation").change(function () {
+               var value = $("#drp_Affiliation option:selected").val();
+               console.log(value);
+               if (value == 5) {
+                   $("#div_Affiliationother").attr("style", "display:inline");
+               }
+               else {
+                   $("#div_Affiliationother").attr("style", "display:none");
+               }
+           });
+       });
+
+   </script>
 </body>
 </html>
